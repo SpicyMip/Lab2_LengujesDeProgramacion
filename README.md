@@ -58,10 +58,12 @@ typedef struct {
     int preguntas;
     tPregunta *preguntas;
 } tCertamen;
+```
 2.4. Funciones
 Además, se deben implementar las siguientes funciones para manipular la estructura de datos anteriormente explicada:
 
-c
+
+```
 Copy code
 // Crea un nuevo certamen vacío
 tCertamen* crearCertamen(int n_preguntas);
@@ -86,6 +88,7 @@ bool revisarAlternativaSimple(tPregunta pregunta);
 bool revisarAlternativaMultiple(tPregunta pregunta);
 bool revisarVerdaderoFalso(tPregunta pregunta);
 bool revisarCompletar(tPregunta pregunta);
+```
 2.5. Responder
 Luego de leer el archivo certamen.txt y cargar la información en la estructura de datos, se le debe permitir al usuario responder el certamen a través de la consola y una vez que termine de responder se le debe mostrar su calificación. Para esto deberán hacer uso de la estructura y funciones implementadas. El formato en el que el usuario responderá el cuestionario queda a su criterio, pero para cada pregunta se debe indicar el número de pregunta, el tipo de pregunta, el enunciado, las opciones que tiene para responder (si es que aplica) y qué debe ingresar para responder (un string, un entero, múltiples enteros separados por espacios, etc).
 
